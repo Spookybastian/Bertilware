@@ -1,1 +1,2 @@
 # Bertilware
+A personal project
