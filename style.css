@@ -66,13 +66,15 @@ body {
     }
     
     .small {
+        font-size: 0;
         width: 0;
         opacity: 0;
     }
 }
 
 @media screen and (orientation: portrait) {
-       .big {
+    .big {
+        font-size: 0;
         width: 0;
         opacity: 0;
     }
