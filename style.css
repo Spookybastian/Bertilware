@@ -1,8 +1,6 @@
-/* rgb 150 0 255 */
-
 html {
-    font-family: Roboto, monospace;
-    background-color: rgb(150, 0, 255);
+    font-family: Roboto;
+    background-color: #69159E;
     display: flex;
     justify-content: center;
 }
@@ -39,31 +37,53 @@ body {
 }
 
 .dot {
+	position: absolute;
     top: 2vh;
     right: 2vh;
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
     height: 3vh;
     width: 3vh;
+	
+    background-color: white;
+    border-radius: 50%;
     transition-duration: 0.5s;
+	
+	color: white;
+	font-size: 0;
+	text-decoration: none;
+	text-align: center;
+	font-style: italic;
+	font-weight: 700;
 }
 
 .dot:hover {
     border-radius: 0%;
-    transform: scale(2);
+	background-color: #158F9E;
+	font-size: 4vh;
+	text-shadow:
+		0.5px 0.5px #9E2415,
+		1px 1px #9E2415,
+		1.5px 1.5px #9E2415,
+		2px 2px #9E2415,
+		2.5px 2.5px #9E2415,
+		3px 3px #69159E,
+		3.5px 3.5px #69159E,
+		4px 4px #69159E,
+		4.5px 4.5px #69159E,	
+		5px 5px #69159E;
+	height: 5vh;
+	width: 4vh;
+	padding-right: 1vh;
     transition-duration: 0.5s;
 }
-
 
 
 @media screen and (orientation: landscape) {
     .big {
         text-align: center;
         margin: 0 3vh;
-        width: 110vh;
+        width: 112vh;
         opacity: 1;
-    }
+	}	
     
     .small {
         font-size: 0;
